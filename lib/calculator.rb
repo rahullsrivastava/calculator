@@ -28,5 +28,27 @@ class Calculator
   def cancel
     @result = 0
   end
+  
+  def abs
+    @result = @result.abs
+  end
+
+  def square
+    @result *= @result
+  end
+
+  def square_root
+    @result = Math.sqrt(@result)
+  end
+
+  def cube
+    @result *= square
+  end
+
+  def cube_root
+    @result = Math.cbrt(@result)
+  end
+
+
 
 end

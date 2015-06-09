@@ -6,7 +6,7 @@ class SquareCommand
   end
 
   def execute(calculator)
-    calculator.square(@operand)
+    calculator.square
   end
 
 end
