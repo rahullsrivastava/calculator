@@ -6,7 +6,7 @@ class SquareRootCommand
   end
 
   def execute(calculator)
-    calculator.square_root(@operand)
+    calculator.square_root
   end
 
 end
