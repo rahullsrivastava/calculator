@@ -5,11 +5,16 @@ class Calculator
   attr_reader :result
 
   def initialize
-    @dummy = 0
+    @result = 0
   end
 
-  def add(operand1, operand2)
-    (operand1 + operand2) 
+  def add(operand)
+    @result += operand 
   end
+
+  def subtract(operand)
+    @result -= operand
+  end
+
 
 end

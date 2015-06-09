@@ -9,8 +9,7 @@ calculator = Calculator.new()
 while command != 'exit' do
   parser = Parser.new(command)
   operator = parser.decision_maker
-  # puts calculator.operate(operator.operate)
-  result = operator.execute(result)
-  puts result
+  operator.execute(calculator)
+  puts calculator.result
   command = gets.strip
 end
