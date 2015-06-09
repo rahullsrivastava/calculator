@@ -6,7 +6,7 @@ class CubeCommand
   end
 
   def execute(calculator)
-    calculator.cube(@operand)
+    calculator.cube
   end
 
 end
