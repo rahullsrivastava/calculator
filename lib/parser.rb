@@ -1,6 +1,9 @@
 # to parse commands from command line into array
 require_relative './addition.rb'
 require_relative './subtraction.rb'
+require_relative './multiplication.rb'
+require_relative './division.rb'
+require_relative './cancel_command.rb'
 
 class Parser
   
@@ -16,9 +19,9 @@ class Parser
     arg_array = split_command
     return Addition.new(arg_array[1].to_i) if (arg_array[0] == 'add')
     return Subtraction.new(arg_array[1].to_i) if (arg_array[0] == 'subtract')
-    # return @result = @result * arg_array[1].to_i if (arg_array[0] == 'multiply')
-    # return @result = @result / arg_array[1].to_i if (arg_array[0] == 'divide')
-    # return @result = 0 if arg_array[0] == 'cancel'
+    return Multiplication.new(arg_array[1].to_i) if (arg_array[0] == 'multiply')
+    return Division.new(arg_array[1].to_i) if (arg_array[0] == 'divide')
+    return CancelCommand.new(0) if arg_array[0] == 'cancel'
   end
 
 end

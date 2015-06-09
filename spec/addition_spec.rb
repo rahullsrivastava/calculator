@@ -6,9 +6,10 @@ describe Addition do
     expect(additon.operand).to eq(5)
   end  
 
-  it 'should return 10 when initialised with 5 and executed with 5' do
+  it 'should return 10 when initialised with 5 and executed with a calculator with state 5' do
     additon = Addition.new(5)
-    expect(additon.execute(5)).to eq(10)
+    calculator = Calculator.new(5)
+    expect(additon.execute(calculator)).to eq(10)
   end
 
 end
