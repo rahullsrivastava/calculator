@@ -1,5 +1,5 @@
 # Indirection of Subtraction method
-class Subtraction
+class SubtractionCommand
   attr_reader :operand
   def initialize(operand)
     @operand = operand

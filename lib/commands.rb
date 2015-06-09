@@ -1,0 +1,5 @@
+require_relative './Commands/addition_command.rb'
+require_relative './Commands/subtraction_command.rb'
+require_relative './Commands/multiplication_command.rb'
+require_relative './Commands/division_command.rb'
+require_relative './Commands/cancel_command.rb'

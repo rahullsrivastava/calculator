@@ -1,5 +1,5 @@
 # Indirection of Division method
-class Division
+class DivisionCommand
   attr_reader :operand
   def initialize(operand)
     @operand = operand

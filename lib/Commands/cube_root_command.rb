@@ -1,11 +1,12 @@
-# Indirection of Multiplication method
-class Multiplication
+# invoke Cube Root functionality
+class CubeRootCommand
   attr_reader :operand
   def initialize(operand)
     @operand = operand
   end
 
   def execute(calculator)
-    calculator.multiply(@operand)
+    calculator.cube_root(@operand)
   end
+
 end

@@ -1,12 +1,11 @@
-# invoke addition functionality
-class Addition
+# Indirection of Multiplication method
+class MultiplicationCommand
   attr_reader :operand
   def initialize(operand)
     @operand = operand
   end
 
   def execute(calculator)
-    calculator.add(@operand)
+    calculator.multiply(@operand)
   end
-
 end
