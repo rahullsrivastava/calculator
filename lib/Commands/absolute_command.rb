@@ -6,7 +6,7 @@ class AbsoluteCommand
   end
 
   def execute(calculator)
-    calculator.abs(@operand)
+    calculator.abs
   end
 
 end
