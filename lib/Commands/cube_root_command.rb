@@ -5,7 +5,7 @@ class CubeRootCommand
     @operand = operand
   end
 
-  def execute(calculator)
+  def execute(calculator, command_store)
     calculator.cube_root
   end
 

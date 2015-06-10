@@ -5,7 +5,7 @@ class CancelCommand
     @operand = operand
   end
 
-  def execute(calculator)
+  def execute(calculator, command_store)
     calculator.cancel
   end
 end

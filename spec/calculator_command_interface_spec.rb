@@ -7,7 +7,4 @@ describe CalculatorCommandInterface do
     expect(calculator_command_interface.calculator).to be_instance_of(Calculator)
   end
 
-  it "should " do
-  end
-
 end

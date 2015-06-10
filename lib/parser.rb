@@ -17,6 +17,12 @@ class Parser
     return MultiplicationCommand.new(arg_array[1].to_i) if (arg_array[0] == 'multiply')
     return DivisionCommand.new(arg_array[1].to_i) if (arg_array[0] == 'divide')
     return CancelCommand.new(0) if arg_array[0] == 'cancel'
+    return SquareCommand.new(0) if (arg_array[0] == 'square')
+    return SquareRootCommand.new(0) if (arg_array[0] == 'square_root')
+    return AbsoluteCommand.new(0) if (arg_array[0] == 'abs')
+    return CubeCommand.new(0) if (arg_array[0] == 'cube')
+    return CubeRootCommand.new(0) if (arg_array[0] == 'cube_root')
+
   end
 
 end

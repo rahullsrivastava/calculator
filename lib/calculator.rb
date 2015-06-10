@@ -49,6 +49,9 @@ class Calculator
     @result = Math.cbrt(@result)
   end
 
+  def recieve(command)
+    command.execute(self)
+  end
 
 
 end

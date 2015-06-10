@@ -5,7 +5,7 @@ class CubeCommand
     @operand = operand
   end
 
-  def execute(calculator)
+  def execute(calculator, command_store)
     calculator.cube
   end
 

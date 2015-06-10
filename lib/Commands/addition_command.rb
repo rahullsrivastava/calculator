@@ -5,7 +5,7 @@ class AdditionCommand
     @operand = operand
   end
 
-  def execute(calculator)
+  def execute(calculator, command_store)
     calculator.add(@operand)
   end
 
