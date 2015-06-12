@@ -7,5 +7,7 @@ class CancelCommand
 
   def execute(calculator, command_store)
     calculator.cancel
+    calculator.command_store.save(self)
   end
+
 end

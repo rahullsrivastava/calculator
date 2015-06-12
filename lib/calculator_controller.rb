@@ -1,15 +1,16 @@
 #controls the operations of calculator
+require_relative './calculator.rb'
+require_relative './commands.rb'
 class CalculatorController
 
-  def initialize(calculator, operator, command_store)
-    @calculator
-    @operator
-    @command_store
+  def initialize
+    @command_store = CommandStore.new()
+    @calculator = Calculator.new(@command_store)
   end
 
-  def operate
-    @command_store.store(@operator)
-    @calculator.recieve(@operator) 
+  def operate(operator)
+    @calculator.recieve(operator, @command_store) 
+    @calculator.result
   end
 
 end

@@ -6,13 +6,12 @@ class RepeatCommand
   end
 
   def execute(calculator, command_store)
-    previous_history = command_store.history
-    for each previous_history  |hist| do
-      
-    end 
+    for command in command_store.commands[command_store.commands.length - @operand..command_store.commands.length]
+      command.execute
+  end
 
-      
-    end
+  def recieve(command_store)
+    
   end
 
 end

@@ -9,4 +9,8 @@ class SquareCommand
     calculator.square
   end
 
+  def recieve(command_store)
+    command_store.save(self)
+  end
+
 end

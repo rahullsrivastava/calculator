@@ -8,4 +8,9 @@ class SubtractionCommand
   def execute(calculator, command_store)
     calculator.subtract(@operand)
   end
+
+  def recieve(command_store)
+    command_store.save(self)
+  end
+  
 end

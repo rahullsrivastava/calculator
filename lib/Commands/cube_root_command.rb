@@ -9,4 +9,8 @@ class CubeRootCommand
     calculator.cube_root
   end
 
+  def recieve(command_store)
+    command_store.save(self)
+  end
+
 end

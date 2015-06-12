@@ -2,14 +2,15 @@
 require_relative './parser.rb'
 require_relative './calculator.rb'
 require_relative './commands.rb'
+require_relative './command_store.rb'
+require_relative './calculator_controller.rb'
 
 class CalculatorCommandInterface
 
   attr_reader :calculator
 
   def initialize
-    @calculator = Calculator.new()
-    @command_store = CommandStore.new()
+    @calculator_controller = CalculatorController.new()
   end
 
   
@@ -18,12 +19,7 @@ class CalculatorCommandInterface
     while command != 'exit' do
       parser = Parser.new(command)
       operator = parser.decision_maker
-      calculator_controller = CalculatorController.new(@calculator, operator, @command_store)
-      puts calculator_controller
-      # operator.execute(@calculator)
-      # puts @calculator.result
-      # command_store = CommandStore(command)
-      # command_store.store 
+      puts @calculator_controller.operate(operator)
       command = gets.strip
     end
   end

@@ -2,10 +2,11 @@
 
 class Calculator
 
-  attr_reader :result
+  attr_reader :result, :command_store
 
-  def initialize(result=0)
-    @result = result
+  def initialize(command_store)
+    @result = 0
+    @command_store
   end
 
   def add(operand)
@@ -53,5 +54,6 @@ class Calculator
     command.execute(self)
   end
 
+  
 
 end
